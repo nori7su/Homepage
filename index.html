@@ -27,7 +27,23 @@
             font-size: 24px;
             color: #333333;
             margin: 0;}
-    </style>
+    </style>  
+    
+<div class="form-container">
+    <!-- action部分に取得したURLをそのまま入れます -->
+    <form action="https://formspree.io/f/xdajabee" method="POST">
+        <p>このサイトをどこで知りましたか？</p>
+        
+        <div class="radio-group">
+            <label><input type="radio" name="source" value="検索" required> 1:検索</label>
+            <label><input type="radio" name="source" value="Discord"> 2:Discord</label>
+            <label><input type="radio" name="source" value="ダイレクト"> 3:ダイレクト</label>
+        </div>
+        
+        <button type="submit">回答を送信する</button>
+    </form>
+</div>
+
 </head>
 <body>
     <div class="container">
